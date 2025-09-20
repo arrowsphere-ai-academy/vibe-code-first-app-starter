@@ -1,0 +1,21 @@
+{
+  "name": "Vibe code your first app (Codespace)",
+  "build": { "dockerfile": "Dockerfile" },
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8501": { "label": "Streamlit app", "onAutoForward": "openBrowser" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+      ]
+    }
+  },
+  "containerEnv": {
+    "TZ": "Europe/Paris"
+  }
+}

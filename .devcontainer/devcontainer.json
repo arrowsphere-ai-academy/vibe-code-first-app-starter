@@ -1,10 +1,11 @@
 {
   "name": "Vibe code your first app (Codespace)",
-  "build": { "dockerfile": "Dockerfile" },
+  "image": "mcr.microsoft.com/devcontainers/python:3",
   "forwardPorts": [8501],
   "portsAttributes": {
     "8501": { "label": "Streamlit app", "onAutoForward": "openBrowser" }
   },
+  "postCreateCommand": "pip install -r requirements.txt",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -14,8 +15,5 @@
         "GitHub.copilot-chat"
       ]
     }
-  },
-  "containerEnv": {
-    "TZ": "Europe/Paris"
   }
 }

@@ -5,7 +5,7 @@
   "portsAttributes": {
     "8501": { "label": "Streamlit app", "onAutoForward": "openBrowser" }
   },
-  "postCreateCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "echo 'Codespace ready.'",
   "customizations": {
     "vscode": {
       "extensions": [

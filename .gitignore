@@ -1,0 +1,16 @@
+# Python / virtual env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Streamlit cache (keep config.toml tracked)
+.streamlit/*
+!.streamlit/config.toml
+
+# Jupyter & misc
+.ipynb_checkpoints/
+.env
+.env.*
+.DS_Store

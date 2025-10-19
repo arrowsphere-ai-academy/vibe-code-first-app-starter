@@ -1,13 +1,17 @@
 {
   "name": "Vibe code your first app (Codespace)",
-  "image": "mcr.microsoft.com/devcontainers/python:3",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
   "forwardPorts": [8501],
   "portsAttributes": {
     "8501": { "label": "Streamlit app", "onAutoForward": "openBrowser" }
   },
-  "postCreateCommand": "echo 'Codespace ready.'",
+  "postCreateCommand": "python -m venv .venv && . .venv/bin/activate && python -m pip install -U pip && pip install -r requirements.txt",
   "customizations": {
     "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+        "python.terminal.activateEnvironment": true
+      },
       "extensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",

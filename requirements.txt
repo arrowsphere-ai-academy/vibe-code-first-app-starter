@@ -1,5 +1,5 @@
-streamlit
-pandas
-plotly
-openpyxl
-pgeocode
+streamlit==1.37.1
+pandas==2.2.2
+plotly==5.23.0
+openpyxl==3.1.5
+pgeocode==0.5.0
